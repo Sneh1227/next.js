@@ -1,8 +1,12 @@
-export default function Card() {
+type CardProps = {
+    title:string;
+    description:string;
+}
+export default function Card({title,description}:CardProps) {
     return (
-        <div>
-            <h1>Hello</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, aspernatur?</p>
+        <div className="card p-4 rounded shadow-md w-fit bg-amber-600 m-5">
+            <h1>{title}</h1>
+            <p>{description}</p>
         </div>
     )
 }
