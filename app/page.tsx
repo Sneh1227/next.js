@@ -1,10 +1,10 @@
 import Card from "@/components/Card";
+import { someAction } from "@/app/actions/something";
 
 export default function Home() {
   return (
     <>
-      <Card title="Card 1" description="this is my first card"/>
-      <Card title="Card 2" description="this is my first card"/>
+      <button className="bg-blue-600 p-4 m-4" onClick={someAction}>Click</button>
     </>
   );
 }
